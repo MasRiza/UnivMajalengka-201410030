@@ -1,0 +1,17 @@
+#include<stdio.h>
+ #include <iostream>
+ using namespace std;
+
+ int main ()
+ {
+ int Array [] = {1, 3, 4, 5, 7, 8};
+ int hilang = 0;
+
+ for (int i = 0; i < 10; i++) {
+     if (Array[i -  hilang] != i+1) 
+     {
+         cout << "Angka " << i+1 << " Tidak Ditemukan. \n" << hilang << "\n";
+         hilang++;
+     }
+   }
+ }
